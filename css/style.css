@@ -27,7 +27,7 @@
 /*Changes font sizes depending on screen size. Only to have to redefine sizes here */
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5;
+        --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -42,4 +42,29 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+}
+
+img {
+	display: block; /*issue with img*/
+	max-width: 100%; /*dont overflow from their parents*/
+}
+
+/*Typography*/
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+	margin: 0;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+
+h2 {
+	font-size: var(--fs-h2);
+}
+
+h3 {
+	font-size: var(--fs-h3);
 }
