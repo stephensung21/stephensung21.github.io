@@ -49,6 +49,10 @@ img {
 	max-width: 100%; /*dont overflow from their parents*/
 }
 
+strong {
+	font-weight: var(--fw-bold);
+}
+
 /*Typography*/
 h1,
 h2,
@@ -70,7 +74,15 @@ h3 {
 }
 
 .section__title{
+	margin-bottom: .25em;
+}
 
+.section__title--intro {
+	font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+	display:block; /*always ends up on its own line*/
 }
 
 .section__subtitle {
@@ -83,4 +95,6 @@ h3 {
 	background: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
+
+
 
